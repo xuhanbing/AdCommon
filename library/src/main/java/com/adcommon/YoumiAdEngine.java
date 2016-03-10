@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
-import android.os.SystemClock;
 import android.widget.LinearLayout;
 
 import ofs.ahd.dii.AdManager;
