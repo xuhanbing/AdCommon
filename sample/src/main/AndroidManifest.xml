@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hanbing.sample">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- waps 配置 -->
+        <!-- 应用标识 -->
+        <meta-data
+            android:name="WAPS_APP_ID"
+            android:value="09f277ca386ee99cb4c910e09f562112" />
+        <!-- 分发渠道标识 默认waps -->
+        <meta-data
+            android:name="WAPS_APP_PID"
+            android:value="waps" />
+        <!-- 微信appid -->
+        <meta-data
+            android:name="WX_APP_ID"
+            android:value="wx1e1c162350c09c66" />
+        <!-- waps 配置 -->
+
+        <!-- yuomi -->
+        <!-- appid -->
+        <meta-data
+            android:name="YOUMI_APP_ID"
+            android:value="cfdbdd2786ea88ea" />
+        <!-- appsecret -->
+        <meta-data
+            android:name="YOUMI_APP_SECRET"
+            android:value="d8edde7d10dd0073" />
+        <!-- yuomi end -->
+
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

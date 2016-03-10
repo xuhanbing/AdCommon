@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.hanbing.sample.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_splash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
+                android:text="开屏广告"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_splash_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
+                android:text="开屏广告（布局）"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_pop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
+                android:text="插屏广告"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_pop_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
+                android:text="插屏广告(布局)"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
+                android:text="推荐列表"/>
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_offer_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
+                android:text="推荐列表(对话框)"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_offer_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
+                android:text="分享列表"/>
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_offer_share_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
+                android:text="分享列表(对话框)"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_offer_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
+                android:text="应用列表"/>
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_offer_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
+                android:text="游戏列表"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_award"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
+                android:text="奖励+10"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_spend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
+                android:text="消费-10"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
+                android:text="积分"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_custom_single"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
+                android:text="自定义广告"/>
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_custom_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
+                android:text="自定义广告列表"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_self"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
+                android:text="自己广告"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_self_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
+                android:text="自己广告列表"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_get_config"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
+                android:text="获取配置"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_config"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
+                android:text="配置"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_banner"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_mini"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

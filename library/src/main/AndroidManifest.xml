@@ -1,0 +1,84 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.adcommon">
+
+
+    <!-- waps start-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <!-- waps权限 end -->
+
+    <!-- youmi start -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- 如果使用积分墙广告,还需要配置下面权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- 以下为可选权限 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- youmi end -->
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <!-- waps start -->
+        <!--<meta-data android:name="WAPS_APP_ID" android:value="应用标识"/>-->
+        <!--<meta-data android:name="WAPS_APP_PID" android:value="分发渠道标识 默认waps-"/>-->
+        <!--<meta-data android:name="WX_APP_ID" android:value="微信appid"/>-->
+        <!-- waps end -->
+
+        <!-- youmi start-->
+        <!--<meta-data-->
+            <!--android:name="YOUMI_CHANNEL"-->
+            <!--android:value="这里替换为非负整数的渠道号" >-->
+        <!--</meta-data>-->
+        <!-- youmi end -->
+
+
+
+        <!-- youmi start -->
+        <activity
+            android:name="ofs.ahd.dii.HH"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <service
+            android:name="ofs.ahd.dii.AA"
+            android:exported="false" >
+        </service>
+
+        <service
+            android:name="ofs.ahd.dii.QQ"
+            android:exported="false" >
+        </service >
+        <receiver
+            android:name="ofs.ahd.dii.PP" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- youmi end -->
+
+    </application>
+
+</manifest>
